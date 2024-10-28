@@ -42,7 +42,7 @@ export const BotBubble = (props: Props) => {
   let botMessageEl: HTMLDivElement | undefined;
   let botDetailsEl: HTMLDetailsElement | undefined;
 
-  Marked.setOptions({ isNoP: true });
+  Marked.setOptions({ isNoP: true, sanitize: false });
 
   const [rating, setRating] = createSignal('');
   const [feedbackId, setFeedbackId] = createSignal('');

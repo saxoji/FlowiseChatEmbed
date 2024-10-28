@@ -22,7 +22,7 @@ const defaultFontSize = 16;
 
 export const AgentReasoningBubble = (props: Props) => {
   let botMessageEl: HTMLDivElement | undefined;
-  Marked.setOptions({ isNoP: true });
+  Marked.setOptions({ isNoP: true, sanitize: false });
 
   onMount(() => {
     if (botMessageEl) {
