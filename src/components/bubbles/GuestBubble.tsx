@@ -24,7 +24,7 @@ const defaultFontSize = 16;
 export const GuestBubble = (props: Props) => {
   let userMessageEl: HTMLDivElement | undefined;
 
-  Marked.setOptions({ isNoP: true, sanitize: props.renderHTML !== undefined ? !props.renderHTML : true });
+  Marked.setOptions({ isNoP: true });
 
   onMount(() => {
     if (userMessageEl) {
